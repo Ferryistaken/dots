@@ -1,0 +1,6 @@
+pane	music	0	:mocp	1	:*	0	:/home/ferry	1	mocp	:mocp
+pane	music	0	:mocp	1	:*	1	:/home/ferry	0	pacmixer	:pacmixer
+pane	music	0	:mocp	1	:*	2	:/home/ferry	0	htop	:htop
+pane	music	0	:mocp	1	:*	3	:/home/ferry	0	cava	:cava
+window	music	0	1	:*	df70,351x91,0,0{238x91,0,0,1,112x91,239,0[112x45,239,0{23x45,239,0,2,88x45,263,0,3},112x45,239,46,4]}
+state	music	

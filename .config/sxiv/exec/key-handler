@@ -1,0 +1,14 @@
+#!/bin/sh
+while read file
+do
+        case "$1" in
+        "C-d")
+                rm "$file" ;;
+        "C-r")
+                convert -rotate 90 "$file" "$file" ;;
+        "C-b")
+                wal -i "$file" && $HOME/Documents/scripts/setColor.sh;;
+        "C-l")
+                wal -l -i "$file" && $HOME/Documents/scripts/setColor.sh;;
+        esac
+done

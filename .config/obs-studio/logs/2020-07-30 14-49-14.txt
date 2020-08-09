@@ -1,0 +1,137 @@
+02:49:14 PM.542: CPU Name: AMD Ryzen 9 3900X 12-Core Processor
+02:49:14 PM.543: CPU Speed: 4191.667MHz
+02:49:14 PM.544: Physical Cores: 12, Logical Cores: 24
+02:49:14 PM.544: Physical Memory: 64330MB Total, 47142MB Free
+02:49:14 PM.544: Kernel Version: Linux 5.7.10-arch1-1
+02:49:14 PM.544: Distribution: "Arch Linux" Unknown
+02:49:14 PM.544: Window System: X11.0, Vendor: The X.Org Foundation, Version: 1.20.8
+02:49:14 PM.544: Portable mode: false
+02:49:14 PM.620: OBS 25.0.8-1 (linux)
+02:49:14 PM.620: ---------------------------------
+02:49:14 PM.621: ---------------------------------
+02:49:14 PM.621: audio settings reset:
+02:49:14 PM.621: 	samples per sec: 44100
+02:49:14 PM.621: 	speakers:        2
+02:49:14 PM.624: ---------------------------------
+02:49:14 PM.624: Initializing OpenGL...
+02:49:14 PM.684: Loading up OpenGL on adapter NVIDIA Corporation GeForce RTX 2080 SUPER/PCIe/SSE2
+02:49:14 PM.684: OpenGL loaded successfully, version 3.3.0 NVIDIA 450.57, shading language 3.30 NVIDIA via Cg compiler
+02:49:14 PM.690: ---------------------------------
+02:49:14 PM.690: video settings reset:
+02:49:14 PM.690: 	base resolution:   3440x1440
+02:49:14 PM.690: 	output resolution: 3440x1440
+02:49:14 PM.690: 	downscale filter:  Bicubic
+02:49:14 PM.690: 	fps:               60/1
+02:49:14 PM.690: 	format:            NV12
+02:49:14 PM.690: 	YUV mode:          601/Partial
+02:49:14 PM.690: NV12 texture support not available
+02:49:14 PM.690: Audio monitoring device:
+02:49:14 PM.690: 	name: Default
+02:49:14 PM.690: 	id: default
+02:49:14 PM.690: ---------------------------------
+02:49:14 PM.692: Failed to load 'en-US' text for module: 'decklink-ouput-ui.so'
+02:49:14 PM.760: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+02:49:14 PM.760: No blackmagic support
+02:49:14 PM.766: NVENC supported
+02:49:14 PM.766: FFMPEG VAAPI supported
+02:49:14 PM.772: VLC found, VLC video source enabled
+02:49:14 PM.772: ---------------------------------
+02:49:14 PM.772:   Loaded Modules:
+02:49:14 PM.772:     vlc-video.so
+02:49:14 PM.772:     text-freetype2.so
+02:49:14 PM.772:     rtmp-services.so
+02:49:14 PM.772:     obs-x264.so
+02:49:14 PM.772:     obs-transitions.so
+02:49:14 PM.772:     obs-outputs.so
+02:49:14 PM.772:     obs-libfdk.so
+02:49:14 PM.772:     obs-filters.so
+02:49:14 PM.772:     obs-ffmpeg.so
+02:49:14 PM.772:     linux-v4l2.so
+02:49:14 PM.772:     linux-pulseaudio.so
+02:49:14 PM.772:     linux-jack.so
+02:49:14 PM.772:     linux-decklink.so
+02:49:14 PM.772:     linux-capture.so
+02:49:14 PM.772:     linux-alsa.so
+02:49:14 PM.772:     image-source.so
+02:49:14 PM.772:     frontend-tools.so
+02:49:14 PM.772:     decklink-ouput-ui.so
+02:49:14 PM.772: ---------------------------------
+02:49:14 PM.772: ==== Startup complete ===============================================
+02:49:14 PM.775: All scene data cleared
+02:49:14 PM.775: ------------------------------------------------
+02:49:14 PM.776: pulse-input: Server name: 'pulseaudio 13.0'
+02:49:14 PM.776: pulse-input: Audio format: s16le, 44100 Hz, 2 channels
+02:49:14 PM.776: pulse-input: Started recording from 'alsa_output.pci-0000_0d_00.4.analog-stereo.monitor'
+02:49:14 PM.777: xshm-input: Geometry 3440x1440 @ 0,0
+02:49:14 PM.803: pulse-input: Server name: 'pulseaudio 13.0'
+02:49:14 PM.803: pulse-input: Audio format: s16le, 44100 Hz, 2 channels
+02:49:14 PM.803: pulse-input: Started recording from 'alsa_input.pci-0000_0d_00.4.analog-stereo'
+02:49:14 PM.803: pulse-input: Server name: 'pulseaudio 13.0'
+02:49:14 PM.803: pulse-input: Audio format: s16le, 44100 Hz, 2 channels
+02:49:14 PM.803: pulse-input: Started recording from 'alsa_output.pci-0000_0d_00.4.analog-stereo.monitor'
+02:49:14 PM.806: xcompcap: XCompositeNameWindowPixmap failed: BadMatch (invalid parameter attributes)
+02:49:14 PM.806: Switched to scene 'Scene'
+02:49:14 PM.806: ------------------------------------------------
+02:49:14 PM.806: Loaded scenes:
+02:49:14 PM.806: - scene 'Scene':
+02:49:14 PM.808:     - source: 'Screen Capture (XSHM)' (xshm_input)
+02:49:14 PM.808:     - source: 'mic' (pulse_input_capture)
+02:49:14 PM.808:     - source: 'sysAudio' (pulse_output_capture)
+02:49:14 PM.808:     - source: 'chat' (xcomposite_input)
+02:49:14 PM.808:         - filter: 'Crop/Pad' (crop_filter)
+02:49:14 PM.808: - scene 'block':
+02:49:14 PM.808:     - source: 'richard' (image_source)
+02:49:14 PM.808:     - source: 'linus' (image_source)
+02:49:14 PM.808:     - source: 'back soon' (text_ft2_source_v2)
+02:49:14 PM.808:     - source: 'default' (pulse_output_capture)
+02:49:14 PM.808:     - source: 'mic' (pulse_input_capture)
+02:49:14 PM.808: ------------------------------------------------
+02:49:15 PM.359: adding 46 milliseconds of audio buffering, total audio buffering is now 46 milliseconds (source: mic)
+02:49:15 PM.359: 
+02:49:17 PM.581: ---------------------------------
+02:49:17 PM.581: video settings reset:
+02:49:17 PM.581: 	base resolution:   3440x1440
+02:49:17 PM.581: 	output resolution: 3440x1440
+02:49:17 PM.581: 	downscale filter:  Bicubic
+02:49:17 PM.581: 	fps:               60/1
+02:49:17 PM.581: 	format:            NV12
+02:49:17 PM.581: 	YUV mode:          601/Partial
+02:49:17 PM.582: NV12 texture support not available
+02:49:17 PM.582: Service '' not found
+02:49:17 PM.609: Audio monitoring device:
+02:49:17 PM.609: 	name: Default
+02:49:17 PM.609: 	id: default
+02:49:17 PM.610: Switched to profile 'shadowplay' (shadowplay)
+02:49:17 PM.610: ------------------------------------------------
+02:49:31 PM.139: ---------------------------------
+02:49:31 PM.139: [NVENC encoder: 'recording_h264'] settings:
+02:49:31 PM.139: 	rate_control: CBR
+02:49:31 PM.139: 	bitrate:      8000
+02:49:31 PM.139: 	cqp:          0
+02:49:31 PM.139: 	keyint:       250
+02:49:31 PM.139: 	preset:       hq
+02:49:31 PM.139: 	profile:      high
+02:49:31 PM.139: 	width:        3440
+02:49:31 PM.139: 	height:       1440
+02:49:31 PM.139: 	2-pass:       false
+02:49:31 PM.139: 	b-frames:     2
+02:49:31 PM.139: 	GPU:          0
+02:49:31 PM.139: 
+02:49:31 PM.378: libfdk_aac encoder created
+02:49:31 PM.378: libfdk_aac bitrate: 160, channels: 2
+02:49:31 PM.378: libfdk_aac encoder created
+02:49:31 PM.378: libfdk_aac bitrate: 160, channels: 2
+02:49:31 PM.382: ==== Replay Buffer Start ===========================================
+02:50:26 PM.112: Settings changed (hotkeys)
+02:50:26 PM.112: ------------------------------------------------
+02:52:16 PM.421: Settings changed (hotkeys)
+02:52:16 PM.421: ------------------------------------------------
+02:52:43 PM.275: Settings changed (hotkeys)
+02:52:43 PM.275: ------------------------------------------------
+02:52:46 PM.027: [ffmpeg muxer: 'Replay Buffer'] Wrote replay buffer to '/home/ferry/Videos/replays/Replay 2020-07-30 14-52-45.mkv'
+02:52:59 PM.424: [ffmpeg muxer: 'Replay Buffer'] Wrote replay buffer to '/home/ferry/Videos/replays/Replay 2020-07-30 14-52-59.mkv'
+03:25:10 PM.168: [ffmpeg muxer: 'Replay Buffer'] Wrote replay buffer to '/home/ferry/Videos/replays/Replay 2020-07-30 15-25-10.mkv'
+04:32:23 PM.258: adding 23 milliseconds of audio buffering, total audio buffering is now 69 milliseconds (source: sysAudio)
+04:32:23 PM.258: 
+05:12:34 PM.847: adding 23 milliseconds of audio buffering, total audio buffering is now 92 milliseconds (source: default)
+05:12:34 PM.847: 

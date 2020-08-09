@@ -1,0 +1,193 @@
+#  ███████╗██╗  ██╗██╗  ██╗██╗  ██╗██████╗ ██████╗  ██████╗
+#  ██╔════╝╚██╗██╔╝██║  ██║██║ ██╔╝██╔══██╗██╔══██╗██╔════╝
+#  ███████╗ ╚███╔╝ ███████║█████╔╝ ██║  ██║██████╔╝██║     
+#  ╚════██║ ██╔██╗ ██╔══██║██╔═██╗ ██║  ██║██╔══██╗██║     
+#  ███████║██╔╝ ██╗██║  ██║██║  ██╗██████╔╝██║  ██║╚██████╗
+#  ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝ ╚═════╝
+#                                                          
+
+# Show command helper
+super + control + h
+	$HOME/Documents/scripts/sxhkdHelper.sh
+
+#### BSPWM COMMANDS #####
+
+# close window
+super + q
+	bspc node -c
+
+# change window state
+super + {t, shift + t}
+	bspc node -t {tiled, pseudo_tiled}
+
+# toggle fullscreen
+super + f
+	bspc node --state \~fullscreen
+
+# toggle floating
+super + shift + f
+	bspc node --state \~floating
+
+# monocle/tiled layout
+super + m
+    bspc node -n last.!automatic
+
+# change focus
+super + {_,shift + }{h,j,k,l}
+	bspc node -{f,s} {west,south,north,east}
+
+# select where to tile next window
+ctrl + shift + {h,j,k,l}
+	bspc node -p {west,south,north,east}
+
+# go back from selectio
+ctrl + shift + q
+	bspc node -p cancel
+
+# send to given desktop
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} focused:'^{1-9,10}'
+
+# go to special desktop
+super + Escape
+	bspc desktop 11 --focus
+
+#### New Resize Windows
+
+# resize left
+super + y
+	$HOME/.config/bspwm/resize left
+
+# resize down
+super + u
+	$HOME/.config/bspwm/resize down
+
+# resize up
+super + i
+	$HOME/.config/bspwm/resize up
+
+# resize right
+super + o
+	$HOME/.config/bspwm/resize right
+
+# This is to make the selected window sticky
+super + s
+	$HOME/Documents/scripts/toggleSticky.sh
+
+# This is to make the selected window hidden
+super + d
+	bspc node $1 --flag sticky=on; bspc node $1 --flag hidden=on
+
+# this is to show hidden windows
+super + shift + d
+	$HOME/Documents/scripts/showHidden.sh
+
+# this cycles between layouts
+super + c
+	bspc node @/ -C forward
+
+#### WM Independent Commands ####
+
+# window switcher
+alt + Tab
+	rofi -show window
+
+# lock screen
+super + control + l
+	notify-send "Locking Screen"; betterlockscreen -u $HOME/Pictures/wallpapers/ -l blur
+
+# start terminal
+super + Return
+	termite
+
+# start browser
+super + w
+	chromium
+
+# start backup browser
+super + control + w
+	brave
+
+# application launcher
+super + shift + Return
+	rofi -combi-modi drun,run,ssh -font "RobotoMono 10" -matching fuzzy -show combi
+
+# music
+
+# next song
+XF86AudioNext
+	playerctl --player=playerctld next; notify-send --icon=gtk-info Music "Playing next song"; sleep 3; /home/ferry/Documents/scripts/removeNotifications.sh
+
+# previous song
+XF86AudioPrev
+	playerctl --player=playerctld previous; notify-send --icon=gtk-info Music "Playing previous song"; sleep 3; /home/ferry/Documents/scripts/removeNotifications.sh
+
+# play song
+XF86AudioPlay
+	playerctl --player=playerctld play-pause; notify-send --icon=$HOME/.local/share/icons/myIcons/play-button.svg Music "▶⏸"; sleep 3; /home/ferry/Documents/scripts/removeNotifications.sh
+
+# raise volume by 2%
+XF86AudioRaiseVolume
+	amixer -D pulse sset Master 2%+ > /dev/null
+
+# lower volume by 2%
+XF86AudioLowerVolume
+	amixer -D pulse sset Master 2%- > /dev/null
+
+# mute audio
+XF86AudioMute
+	amixer -D pulse set Master 1+ toggle; notify-send --icon=gtk-info Music "Volume Muted"; sleep 3; /home/ferry/Documents/scripts/removeNotifications.sh > /dev/null
+
+# show volume mixer
+super + v
+	killall pavucontrol 1>/dev/null 2>/dev/null; pavucontrol
+
+# choose what to do with a certain player
+super + shift + v
+	$HOME/Documents/scripts/chooseMediaAction.sh
+
+# take screenshot
+super + shift + s
+	scrot
+
+# take screenshot but choose zone
+super + control + s
+	sleep 0.2; scrot -s
+
+#open file browser
+super + e
+	pcmanfm
+
+# open the bloated text editor
+super + shift + c
+	code
+
+# change wallpaper and reload colors
+super + shift + w
+	$HOME/Documents/scripts/fuzzyWallpaper.sh
+
+# open pdf
+super + p
+	$HOME/Documents/scripts/openPDF
+
+# Kill The ShadowReplay
+super + control + |
+	killall -s1 ffmpeg
+
+### Shadowplay functionality with OBS
+
+# Start shadowplay
+super + control + r
+	notify-send "Started Shadowplay" "Replay buffer started"
+
+# Record Last 1.5 mins
+#super + shift + r
+#	notify-send "Clip saved" "Recorded last 1.5 minutes"
+
+# shutdown pc
+super + shift + u
+	"$HOME/Documents/scripts/askPassword.sh | sudo -S shutdown now"
+
+# close brave ad
+super + b
+	$HOME/Documents/scripts/closeBraveAd.py

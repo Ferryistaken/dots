@@ -1,0 +1,158 @@
+03:40:07 PM.328: CPU Name: AMD Ryzen 9 3900X 12-Core Processor
+03:40:07 PM.328: CPU Speed: 3032.094MHz
+03:40:07 PM.329: Physical Cores: 12, Logical Cores: 24
+03:40:07 PM.329: Physical Memory: 64330MB Total, 47206MB Free
+03:40:07 PM.329: Kernel Version: Linux 5.7.12-arch1-1
+03:40:07 PM.329: Distribution: "Arch Linux" Unknown
+03:40:07 PM.329: Window System: X11.0, Vendor: The X.Org Foundation, Version: 1.20.8
+03:40:07 PM.330: Portable mode: false
+03:40:07 PM.403: OBS 25.0.8-1 (linux)
+03:40:07 PM.403: ---------------------------------
+03:40:07 PM.403: ---------------------------------
+03:40:07 PM.403: audio settings reset:
+03:40:07 PM.403: 	samples per sec: 44100
+03:40:07 PM.403: 	speakers:        2
+03:40:07 PM.406: ---------------------------------
+03:40:07 PM.406: Initializing OpenGL...
+03:40:07 PM.480: Loading up OpenGL on adapter NVIDIA Corporation GeForce RTX 2080 SUPER/PCIe/SSE2
+03:40:07 PM.480: OpenGL loaded successfully, version 3.3.0 NVIDIA 450.57, shading language 3.30 NVIDIA via Cg compiler
+03:40:07 PM.486: ---------------------------------
+03:40:07 PM.486: video settings reset:
+03:40:07 PM.486: 	base resolution:   3440x1440
+03:40:07 PM.486: 	output resolution: 3440x1440
+03:40:07 PM.486: 	downscale filter:  Bicubic
+03:40:07 PM.486: 	fps:               60/1
+03:40:07 PM.486: 	format:            NV12
+03:40:07 PM.486: 	YUV mode:          601/Partial
+03:40:07 PM.486: NV12 texture support not available
+03:40:07 PM.486: Audio monitoring device:
+03:40:07 PM.486: 	name: Default
+03:40:07 PM.486: 	id: default
+03:40:07 PM.486: ---------------------------------
+03:40:07 PM.488: Failed to load 'en-US' text for module: 'decklink-ouput-ui.so'
+03:40:07 PM.548: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+03:40:07 PM.548: No blackmagic support
+03:40:07 PM.554: NVENC supported
+03:40:07 PM.554: FFMPEG VAAPI supported
+03:40:07 PM.560: VLC found, VLC video source enabled
+03:40:07 PM.560: ---------------------------------
+03:40:07 PM.560:   Loaded Modules:
+03:40:07 PM.560:     vlc-video.so
+03:40:07 PM.560:     text-freetype2.so
+03:40:07 PM.560:     rtmp-services.so
+03:40:07 PM.560:     obs-x264.so
+03:40:07 PM.560:     obs-transitions.so
+03:40:07 PM.560:     obs-outputs.so
+03:40:07 PM.560:     obs-libfdk.so
+03:40:07 PM.560:     obs-filters.so
+03:40:07 PM.560:     obs-ffmpeg.so
+03:40:07 PM.560:     linux-v4l2.so
+03:40:07 PM.560:     linux-pulseaudio.so
+03:40:07 PM.560:     linux-jack.so
+03:40:07 PM.560:     linux-decklink.so
+03:40:07 PM.560:     linux-capture.so
+03:40:07 PM.560:     linux-alsa.so
+03:40:07 PM.560:     image-source.so
+03:40:07 PM.560:     frontend-tools.so
+03:40:07 PM.560:     decklink-ouput-ui.so
+03:40:07 PM.560: ---------------------------------
+03:40:07 PM.560: ==== Startup complete ===============================================
+03:40:07 PM.560: Service '' not found
+03:40:07 PM.562: All scene data cleared
+03:40:07 PM.562: ------------------------------------------------
+03:40:07 PM.563: pulse-input: Server name: 'pulseaudio 13.0'
+03:40:07 PM.564: pulse-input: Audio format: s16le, 44100 Hz, 2 channels
+03:40:07 PM.564: pulse-input: Started recording from 'alsa_output.pci-0000_0d_00.4.analog-stereo.monitor'
+03:40:07 PM.564: xshm-input: Geometry 3440x1440 @ 0,0
+03:40:07 PM.565: Failed to open file '/home/ferry/Pictures/gnu.png': No such file or directory
+03:40:07 PM.565: gs_image_file_init_internal: Failed to load file '/home/ferry/Pictures/gnu.png'
+03:40:07 PM.565: [image_source: 'richard'] failed to load texture '/home/ferry/Pictures/gnu.png'
+03:40:07 PM.565: Failed to open file '/home/ferry/Pictures/torvalds.png': No such file or directory
+03:40:07 PM.565: gs_image_file_init_internal: Failed to load file '/home/ferry/Pictures/torvalds.png'
+03:40:07 PM.565: [image_source: 'linus'] failed to load texture '/home/ferry/Pictures/torvalds.png'
+03:40:07 PM.584: pulse-input: Server name: 'pulseaudio 13.0'
+03:40:07 PM.584: pulse-input: Audio format: s16le, 44100 Hz, 2 channels
+03:40:07 PM.584: pulse-input: Started recording from 'alsa_input.pci-0000_0d_00.4.analog-stereo'
+03:40:07 PM.585: pulse-input: Server name: 'pulseaudio 13.0'
+03:40:07 PM.585: pulse-input: Audio format: s16le, 44100 Hz, 2 channels
+03:40:07 PM.585: pulse-input: Started recording from 'alsa_output.pci-0000_0d_00.4.analog-stereo.monitor'
+03:40:07 PM.586: Switched to scene 'Scene'
+03:40:07 PM.587: ------------------------------------------------
+03:40:07 PM.587: Loaded scenes:
+03:40:07 PM.587: - scene 'Scene':
+03:40:07 PM.588:     - source: 'Screen Capture (XSHM)' (xshm_input)
+03:40:07 PM.588:     - source: 'mic' (pulse_input_capture)
+03:40:07 PM.588:     - source: 'sysAudio' (pulse_output_capture)
+03:40:07 PM.588:     - source: 'chat' (xcomposite_input)
+03:40:07 PM.588:         - filter: 'Crop/Pad' (crop_filter)
+03:40:07 PM.588: - scene 'block':
+03:40:07 PM.588:     - source: 'richard' (image_source)
+03:40:07 PM.588:     - source: 'linus' (image_source)
+03:40:07 PM.588:     - source: 'back soon' (text_ft2_source_v2)
+03:40:07 PM.588:     - source: 'default' (pulse_output_capture)
+03:40:07 PM.588:     - source: 'mic' (pulse_input_capture)
+03:40:07 PM.588: ------------------------------------------------
+03:40:08 PM.142: adding 46 milliseconds of audio buffering, total audio buffering is now 46 milliseconds (source: mic)
+03:40:08 PM.142: 
+03:40:09 PM.686: ---------------------------------
+03:40:09 PM.686: [NVENC encoder: 'recording_h264'] settings:
+03:40:09 PM.686: 	rate_control: CBR
+03:40:09 PM.686: 	bitrate:      8000
+03:40:09 PM.686: 	cqp:          0
+03:40:09 PM.686: 	keyint:       250
+03:40:09 PM.686: 	preset:       hq
+03:40:09 PM.686: 	profile:      high
+03:40:09 PM.686: 	width:        3440
+03:40:09 PM.686: 	height:       1440
+03:40:09 PM.686: 	2-pass:       false
+03:40:09 PM.686: 	b-frames:     2
+03:40:09 PM.686: 	GPU:          0
+03:40:09 PM.686: 
+03:40:09 PM.911: libfdk_aac encoder created
+03:40:09 PM.911: libfdk_aac bitrate: 160, channels: 2
+03:40:09 PM.911: libfdk_aac encoder created
+03:40:09 PM.911: libfdk_aac bitrate: 160, channels: 2
+03:40:09 PM.916: ==== Recording Start ===============================================
+03:40:09 PM.916: [ffmpeg muxer: 'adv_file_output'] Writing file '/home/ferry/Videos/replays/2020-08-08 15-40-09.mkv'...
+03:40:37 PM.516: [ffmpeg muxer: 'adv_file_output'] Output of file '/home/ferry/Videos/replays/2020-08-08 15-40-09.mkv' stopped
+03:40:37 PM.516: Output 'adv_file_output': stopping
+03:40:37 PM.516: Output 'adv_file_output': Total frames output: 1644
+03:40:37 PM.516: Output 'adv_file_output': Total drawn frames: 1656
+03:40:37 PM.517: ==== Recording Stop ================================================
+03:40:37 PM.579: libfdk_aac encoder destroyed
+03:40:37 PM.579: libfdk_aac encoder destroyed
+03:40:41 PM.426: ---------------------------------
+03:40:41 PM.426: [NVENC encoder: 'recording_h264'] settings:
+03:40:41 PM.426: 	rate_control: CBR
+03:40:41 PM.426: 	bitrate:      8000
+03:40:41 PM.426: 	cqp:          0
+03:40:41 PM.426: 	keyint:       250
+03:40:41 PM.426: 	preset:       hq
+03:40:41 PM.426: 	profile:      high
+03:40:41 PM.426: 	width:        3440
+03:40:41 PM.426: 	height:       1440
+03:40:41 PM.426: 	2-pass:       false
+03:40:41 PM.426: 	b-frames:     2
+03:40:41 PM.426: 	GPU:          0
+03:40:41 PM.426: 
+03:40:41 PM.578: libfdk_aac encoder created
+03:40:41 PM.578: libfdk_aac bitrate: 160, channels: 2
+03:40:41 PM.578: libfdk_aac encoder created
+03:40:41 PM.578: libfdk_aac bitrate: 160, channels: 2
+03:40:41 PM.579: ==== Replay Buffer Start ===========================================
+03:41:24 PM.783: adding 46 milliseconds of audio buffering, total audio buffering is now 92 milliseconds (source: sysAudio)
+03:41:24 PM.783: 
+06:52:41 PM.480: ==== Shutting down ==================================================
+06:52:41 PM.482: Switched to scene '(null)'
+06:52:41 PM.483: pulse-input: Stopped recording from 'alsa_output.pci-0000_0d_00.4.analog-stereo.monitor'
+06:52:41 PM.483: pulse-input: Got 6365847 packets with 509510788 frames
+06:52:41 PM.486: pulse-input: Stopped recording from 'alsa_input.pci-0000_0d_00.4.analog-stereo'
+06:52:41 PM.486: pulse-input: Got 1471880 packets with 509514177 frames
+06:52:41 PM.486: pulse-input: Stopped recording from 'alsa_output.pci-0000_0d_00.4.analog-stereo.monitor'
+06:52:41 PM.486: pulse-input: Got 6161006 packets with 509510132 frames
+06:52:41 PM.491: All scene data cleared
+06:52:41 PM.491: ------------------------------------------------
+06:52:41 PM.503: X Error: GLXBadDrawable, Major opcode: 151, Minor opcode: 26, Serial: 8324816
+06:52:41 PM.503: Failed to make context current.
+06:52:41 PM.503: X Error: GLXBadDrawable, Major opcode: 151, Minor opcode: 26, Serial: 8324818
+06:52:41 PM.503: Failed to make context current.

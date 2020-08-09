@@ -1,0 +1,9 @@
+#!/usr/bin/sh
+
+# kill unwanted apps
+killall picom; picom --config $HOME/.config/picom/picom.conf &
+
+
+bspc config window_gap 3
+bspc config border_width 1
+bspc config top_padding 27

@@ -1,0 +1,30 @@
+{
+  "lists": {
+    "%2Fhome%2Fferry": [
+      "ex",
+      "estensions"
+    ],
+    "%2Fhome%2Fferry%2FDocuments%2Fprojects%2Frust%2Flearning%2FgenericsAndMoreStuff": [
+      "estension"
+    ],
+    "%2Fhome%2Fferry%2FDocuments%2Fscripts": [
+      "exte"
+    ],
+    "%2Fhome%2Fferry%2FDocuments%2Fprojects%2Frust%2FtryingIced": [
+      "ext"
+    ]
+  },
+  "extensions": {
+    "%2Fhome%2Fferry%2FDocuments%2Fprojects%2Frust%2Flearning%2FgenericsAndMoreStuff": [
+      "coc"
+    ],
+    "%2Fhome%2Fferry%2FDocuments%2Fprojects%2Fpython": [
+      ":"
+    ]
+  },
+  "commands": {
+    "%2Fhome%2Fferry%2FDocuments%2Fscripts": [
+      "python.setInterpreter"
+    ]
+  }
+}

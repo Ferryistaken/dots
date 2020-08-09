@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "coc-java": ">=1.4.11",
+    "coc-pairs": ">=1.2.21",
+    "coc-rust-analyzer": ">=0.7.12"
+  }
+}

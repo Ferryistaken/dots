@@ -1,0 +1,6 @@
+pane	irc	0	:nload	1	:*	0	:/home/ferry	0	weechat	:weechat
+pane	irc	0	:nload	1	:*	1	:/home/ferry	0	sudo	:sudo nethogs
+pane	irc	0	:nload	1	:*	2	:/home/ferry	1	nload	:nload wlp5s0
+pane	irc	0	:nload	1	:*	3	:/home/ferry	0	sudo	:sudo iftop -i wlp5s0
+window	irc	0	1	:*	a772,488x91,0,0{309x91,0,0,0,178x91,310,0[178x25,310,0{110x25,310,0,1,67x25,421,0,3},178x65,310,26,2]}
+state	irc	

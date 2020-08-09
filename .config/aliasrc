@@ -1,0 +1,115 @@
+pfetch
+echo ""
+fortune
+
+alias openDot='(cd .config;nvim $(cd $HOME/.config; fzf))'
+
+
+alias ls="exa"
+alias rr="rm -i"
+alias vim="nvim"
+alias v="nvim"
+alias szsh="source /home/ferry/.zshrc"
+alias p="sudo pacman"
+alias volume="pacmixer"
+alias l="exa --long --all --group --modified --accessed --git"
+alias bye="shutdown now"
+alias please="sudo"
+alias secure="$HOME/Documents/scripts/askPassword.sh | sudo -S"
+alias shutdown="shutdown now"
+alias setbg="xwallpaper --center"
+alias setcolor="wal -i"
+alias weather="curl wttr.in/new york"
+alias background="setsid -f"
+alias hardLogOut="sudo systemctl restart lightdm"
+alias resetClock="sudo ntpd -qg"
+alias resetRofi="rm .cache/rofi-3.runcache"
+alias searchAll="sudo find / -iname "
+alias checkUpgradable="pacman -Qu | wc -l"
+alias finished="notify-send --icon=gtk-info Completed \"The program finished running\""
+alias toClipBoard="xclip -selection clipboard"
+alias mute="amixer -D pulse set Master 1+ toggle"
+alias soundNotify="play -v 0.3 $HOME/Sound/notifications/iphoneNotification.mp3 1>/dev/null"
+alias getWindowCoordinates="xdotool getwindowfocus getwindowgeometry"
+alias coolEqualizer="killall -q alacritty; echo " -p /home/ferry/.config/cava/customSoundConfig" |  xargs alacritty --position 2700 50 --dimensions 100 12 --title=coolEqualizer --command cava"
+alias getWallpaper="grep WALLPAPER= $HOME/.xsession | cut -d\= -f 2"
+
+alias cfg="(cd $HOME/.config); fzf | nvim -"
+
+alias maps="telnet mapscii.me"
+alias tty-clock="tty-clock -s -c -b -B"
+
+alias lg="exa --long --all --group --modified --accessed --git | grep"
+
+alias default="clear && source $HOME/.zshrc"
+
+alias walls="sxiv $HOME/Pictures/wallpapers"
+alias showWall="sxiv $HOME/Pictures/wallpapers/wall.*"
+alias refresSchemes="rm .cache/wal/schemes/* --force"
+
+alias editAliases="nvim $HOME/.config/aliasrc"
+
+alias svim="sudo nvim"
+alias cdp="cd $HOME/Documents/projects/"
+
+alias fortnite="reboot"
+
+alias dependencies="pacman -Qdt"
+alias removeDependencies="sudo pacman -Rsnu $(pacman -Qtdq)"
+
+alias tmn="tmux new -s"
+alias tmls="tmux ls"
+alias tma="tmux attach-session -t"
+alias tmk="tmux kill-session -t"
+alias tms="tmux source $HOME/.tmux.conf"
+
+alias getIP="ip -4 addr show enp5s0 | grep -oP '(?<=inet\s)\d+(\.\d+){3}'"
+alias bigScan="sudo nmap -sU -sT -p0-65535 127.0.0.1"
+alias IPscan="nmap -sP 192.168.1.0/24"
+alias advancedIPScanner="sudo arp-scan -I wlp5s0 -l"
+alias monitorConnection="sudo iftop -i wlp5s0"
+
+alias startSSH="sudo systemctl start sshd"
+alias stopSSH="sudo systemctl stop sshd"
+alias closeSSH="sudo killall sshd"
+
+alias remake="sudo make uninstall && sudo make clean && sudo make install"
+
+alias downloadmp3="youtube-dl --extract-audio --audio-format mp3"
+alias downloadSpotify="spotifydl"
+alias queue="mocp -q 2> /dev/null"
+alias playSpotify="dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause 1>/dev/null"
+
+alias keyboard="clear && cat /home/ferry/keyboard/controls.txt"
+
+alias makeFontsWork="fc-cache -f -v"
+
+alias sounds="pavucontrol"
+
+alias gpom="git push origin master"
+
+alias jsonParse="python -mjson.tool"
+
+alias chooseNextSong="find Music -type f | rofi -dmenu -matching fuzzy -format s -font "RobotoMono 10""
+
+alias makeSticky="bspc node $1 --flag sticky=on"
+
+alias lockScreen="betterlockscreen -u Pictures/wallpapers/ -l blur"
+
+alias jojo="playerctl -a stop; wal -i $HOME/Pictures/wallpapers/jojo.png; play -q -v 0.7 $HOME/Sound/misc/ilVentoDoro.wav fade 0 30 5; echo ' -p /home/ferry/.config/cava/customSoundConfig' |  timeout 27s xargs alacritty --position 2700 50 --dimensions 100 12 --class coolEqualizer --command cava && killall play; wal -i `grep WALLPAPER= $HOME/.xsession | cut -d\= -f 2`; playerctl --player=playerctld play"
+
+alias stopSounds="killall play"
+
+# QMK
+alias qmkAP2="qmk compile -kb annepro2/c18 -km Ferryistaken"
+alias flashAP2="$HOME/QMK/ap2/AnnePro2-Tools/target/release/annepro2_tools -p 8009 --loosy"
+
+alias qmkLily="qmk compile -kb lily58/rev1 -km Ferryistaken"
+
+# Shadowplay
+alias shadowPlayStart="background obs --startreplaybuffer --profile "shadowplay""
+
+alias activateVenv='source $(find $HOME/development/virtualenvs -type f -name "activate" | fzf)'
+
+# print the name of the operating system the free software foundation way
+#printf "GNU%s\n" "`yay -Q | grep -Ev -e '^lib' -e '^haskell-' -e '^perl-' -e '^python.?-' -e '^ruby-' -e '-devel' | awk '{printf " + " $1}'`"

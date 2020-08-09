@@ -1,0 +1,112 @@
+01:55:34 PM.666: CPU Name: AMD Ryzen 9 3900X 12-Core Processor
+01:55:34 PM.666: CPU Speed: 1970.420MHz
+01:55:34 PM.667: Physical Cores: 12, Logical Cores: 24
+01:55:34 PM.667: Physical Memory: 64330MB Total, 47832MB Free
+01:55:34 PM.667: Kernel Version: Linux 5.7.11-arch1-1
+01:55:34 PM.667: Distribution: "Arch Linux" Unknown
+01:55:34 PM.667: Window System: X11.0, Vendor: The X.Org Foundation, Version: 1.20.8
+01:55:34 PM.668: Portable mode: false
+01:55:34 PM.757: OBS 25.0.8-1 (linux)
+01:55:34 PM.757: ---------------------------------
+01:55:34 PM.757: ---------------------------------
+01:55:34 PM.757: audio settings reset:
+01:55:34 PM.757: 	samples per sec: 44100
+01:55:34 PM.757: 	speakers:        2
+01:55:34 PM.761: ---------------------------------
+01:55:34 PM.761: Initializing OpenGL...
+01:55:34 PM.826: Loading up OpenGL on adapter NVIDIA Corporation GeForce RTX 2080 SUPER/PCIe/SSE2
+01:55:34 PM.826: OpenGL loaded successfully, version 3.3.0 NVIDIA 450.57, shading language 3.30 NVIDIA via Cg compiler
+01:55:34 PM.832: ---------------------------------
+01:55:34 PM.832: video settings reset:
+01:55:34 PM.832: 	base resolution:   3440x1440
+01:55:34 PM.832: 	output resolution: 3440x1440
+01:55:34 PM.832: 	downscale filter:  Bicubic
+01:55:34 PM.832: 	fps:               60/1
+01:55:34 PM.832: 	format:            NV12
+01:55:34 PM.832: 	YUV mode:          601/Partial
+01:55:34 PM.832: NV12 texture support not available
+01:55:34 PM.833: Audio monitoring device:
+01:55:34 PM.833: 	name: Default
+01:55:34 PM.833: 	id: default
+01:55:34 PM.833: ---------------------------------
+01:55:34 PM.837: Failed to load 'en-US' text for module: 'decklink-ouput-ui.so'
+01:55:34 PM.908: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+01:55:34 PM.908: No blackmagic support
+01:55:34 PM.915: NVENC supported
+01:55:34 PM.915: FFMPEG VAAPI supported
+01:55:34 PM.920: VLC found, VLC video source enabled
+01:55:34 PM.920: ---------------------------------
+01:55:34 PM.920:   Loaded Modules:
+01:55:34 PM.920:     vlc-video.so
+01:55:34 PM.920:     text-freetype2.so
+01:55:34 PM.920:     rtmp-services.so
+01:55:34 PM.920:     obs-x264.so
+01:55:34 PM.920:     obs-transitions.so
+01:55:34 PM.920:     obs-outputs.so
+01:55:34 PM.920:     obs-libfdk.so
+01:55:34 PM.920:     obs-filters.so
+01:55:34 PM.920:     obs-ffmpeg.so
+01:55:34 PM.920:     linux-v4l2.so
+01:55:34 PM.920:     linux-pulseaudio.so
+01:55:34 PM.920:     linux-jack.so
+01:55:34 PM.920:     linux-decklink.so
+01:55:34 PM.920:     linux-capture.so
+01:55:34 PM.920:     linux-alsa.so
+01:55:34 PM.920:     image-source.so
+01:55:34 PM.920:     frontend-tools.so
+01:55:34 PM.920:     decklink-ouput-ui.so
+01:55:34 PM.920: ---------------------------------
+01:55:34 PM.920: ==== Startup complete ===============================================
+01:55:34 PM.921: Service '' not found
+01:55:34 PM.922: All scene data cleared
+01:55:34 PM.922: ------------------------------------------------
+01:55:34 PM.924: pulse-input: Server name: 'pulseaudio 13.0'
+01:55:34 PM.924: pulse-input: Audio format: s16le, 44100 Hz, 2 channels
+01:55:34 PM.924: pulse-input: Started recording from 'alsa_output.pci-0000_0d_00.4.analog-stereo.monitor'
+01:55:34 PM.925: xshm-input: Geometry 3440x1440 @ 0,0
+01:55:34 PM.949: pulse-input: Server name: 'pulseaudio 13.0'
+01:55:34 PM.949: pulse-input: Audio format: s16le, 44100 Hz, 2 channels
+01:55:34 PM.949: pulse-input: Started recording from 'alsa_input.pci-0000_0d_00.4.analog-stereo'
+01:55:34 PM.950: pulse-input: Server name: 'pulseaudio 13.0'
+01:55:34 PM.950: pulse-input: Audio format: s16le, 44100 Hz, 2 channels
+01:55:34 PM.950: pulse-input: Started recording from 'alsa_output.pci-0000_0d_00.4.analog-stereo.monitor'
+01:55:34 PM.953: xcompcap: XCompositeNameWindowPixmap failed: BadMatch (invalid parameter attributes)
+01:55:34 PM.954: Switched to scene 'Scene'
+01:55:34 PM.954: ------------------------------------------------
+01:55:34 PM.954: Loaded scenes:
+01:55:34 PM.954: - scene 'Scene':
+01:55:34 PM.955:     - source: 'Screen Capture (XSHM)' (xshm_input)
+01:55:34 PM.955:     - source: 'mic' (pulse_input_capture)
+01:55:34 PM.955:     - source: 'sysAudio' (pulse_output_capture)
+01:55:34 PM.955:     - source: 'chat' (xcomposite_input)
+01:55:34 PM.955:         - filter: 'Crop/Pad' (crop_filter)
+01:55:34 PM.955: - scene 'block':
+01:55:34 PM.955:     - source: 'richard' (image_source)
+01:55:34 PM.955:     - source: 'linus' (image_source)
+01:55:34 PM.955:     - source: 'back soon' (text_ft2_source_v2)
+01:55:34 PM.955:     - source: 'default' (pulse_output_capture)
+01:55:34 PM.955:     - source: 'mic' (pulse_input_capture)
+01:55:34 PM.955: ------------------------------------------------
+01:55:35 PM.496: adding 46 milliseconds of audio buffering, total audio buffering is now 46 milliseconds (source: mic)
+01:55:35 PM.496: 
+01:55:39 PM.609: ---------------------------------
+01:55:39 PM.609: [NVENC encoder: 'recording_h264'] settings:
+01:55:39 PM.609: 	rate_control: CBR
+01:55:39 PM.609: 	bitrate:      8000
+01:55:39 PM.609: 	cqp:          0
+01:55:39 PM.609: 	keyint:       250
+01:55:39 PM.609: 	preset:       hq
+01:55:39 PM.609: 	profile:      high
+01:55:39 PM.609: 	width:        3440
+01:55:39 PM.609: 	height:       1440
+01:55:39 PM.609: 	2-pass:       false
+01:55:39 PM.609: 	b-frames:     2
+01:55:39 PM.609: 	GPU:          0
+01:55:39 PM.609: 
+01:55:39 PM.857: libfdk_aac encoder created
+01:55:39 PM.857: libfdk_aac bitrate: 160, channels: 2
+01:55:39 PM.857: libfdk_aac encoder created
+01:55:39 PM.857: libfdk_aac bitrate: 160, channels: 2
+01:55:39 PM.861: ==== Replay Buffer Start ===========================================
+02:44:11 PM.987: adding 46 milliseconds of audio buffering, total audio buffering is now 92 milliseconds (source: sysAudio)
+02:44:11 PM.987: 

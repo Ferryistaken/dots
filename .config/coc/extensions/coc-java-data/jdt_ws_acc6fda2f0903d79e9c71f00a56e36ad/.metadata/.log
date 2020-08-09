@@ -1,0 +1,127 @@
+!SESSION 2020-07-31 21:54:03.277 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=14.0.2
+java.vendor=N/A
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/ferry/.config/coc/extensions/coc-java-data/jdt_ws_acc6fda2f0903d79e9c71f00a56e36ad
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-31 21:54:04.660
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-31 21:54:04.735
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-31 21:54:04.760
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-31 21:54:04.765
+!MESSAGE Initializing Java Language Server 0.60.0.202007230941
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-31 21:54:04.775
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-31 21:54:04.775
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.refreshDiagnostics, java.project.import, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.provideSemanticTokens, java.project.getAll, java.project.isTestFile, java.project.getClasspaths, java.project.getSemanticTokensLegend, java.project.getSettings, java.project.updateSourceAttachment, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-31 21:54:04.784
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-31 21:54:04.811
+!MESSAGE Creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-31 21:54:04.889
+!MESSAGE Finished creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2020-07-31 21:54:05.481
+!MESSAGE Initialization failed 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to scan /home/ferry
+	at org.eclipse.jdt.ls.core.internal.managers.BasicFileDetector.scan(BasicFileDetector.java:136)
+	at org.eclipse.jdt.ls.core.internal.managers.GradleProjectImporter.applies(GradleProjectImporter.java:101)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.getImporter(ProjectsManager.java:268)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.importProjects(ProjectsManager.java:106)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.initializeProjects(ProjectsManager.java:98)
+	at org.eclipse.jdt.ls.core.internal.handlers.InitHandler$1.runInWorkspace(InitHandler.java:195)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.nio.file.AccessDeniedException: /home/ferry/.cache/yay/jitsi/pkg
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newDirectoryStream(UnixFileSystemProvider.java:432)
+	at java.base/java.nio.file.Files.newDirectoryStream(Files.java:476)
+	at java.base/java.nio.file.FileTreeWalker.visit(FileTreeWalker.java:300)
+	at java.base/java.nio.file.FileTreeWalker.next(FileTreeWalker.java:373)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2840)
+	at org.eclipse.jdt.ls.core.internal.managers.BasicFileDetector.scanDir(BasicFileDetector.java:170)
+	at org.eclipse.jdt.ls.core.internal.managers.BasicFileDetector.scan(BasicFileDetector.java:134)
+	... 7 more
+!SUBENTRY 1 org.eclipse.jdt.ls.core 4 0 2020-07-31 21:54:05.482
+!MESSAGE Failed to scan /home/ferry
+!STACK 0
+java.nio.file.AccessDeniedException: /home/ferry/.cache/yay/jitsi/pkg
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newDirectoryStream(UnixFileSystemProvider.java:432)
+	at java.base/java.nio.file.Files.newDirectoryStream(Files.java:476)
+	at java.base/java.nio.file.FileTreeWalker.visit(FileTreeWalker.java:300)
+	at java.base/java.nio.file.FileTreeWalker.next(FileTreeWalker.java:373)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2840)
+	at org.eclipse.jdt.ls.core.internal.managers.BasicFileDetector.scanDir(BasicFileDetector.java:170)
+	at org.eclipse.jdt.ls.core.internal.managers.BasicFileDetector.scan(BasicFileDetector.java:134)
+	at org.eclipse.jdt.ls.core.internal.managers.GradleProjectImporter.applies(GradleProjectImporter.java:101)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.getImporter(ProjectsManager.java:268)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.importProjects(ProjectsManager.java:106)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.initializeProjects(ProjectsManager.java:98)
+	at org.eclipse.jdt.ls.core.internal.handlers.InitHandler$1.runInWorkspace(InitHandler.java:195)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-31 21:54:05.586
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-31 21:54:05.592
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-31 21:54:05.595
+!MESSAGE >> java/buildWorkspace (incremental)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-31 21:54:05.607
+!MESSAGE >> New configuration: {java={enabled=true, jdt={ls={vmargs=-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication}}, errors={incompleteClasspath={severity=warning}}, configuration={checkProjectSettingsExclusions=true, updateBuildConfiguration=interactive}, trace={server=off}, import={gradle={enabled=true, wrapper={enabled=true}}, maven={enabled=true}, exclusions=[**/node_modules/**, **/.metadata/**, **/archetype-resources/**, **/META-INF/maven/**]}, referencesCodeLens={enabled=false}, signatureHelp={enabled=false}, implementationsCodeLens={enabled=false}, format={enabled=true, comments={enabled=true}, onType={enabled=true, fixComment={enabled=true}}}, project={referencedLibraries=[lib/**/*.jar]}, autobuild={enabled=true}, maxConcurrentBuilds=1.0, completion={enabled=true, overwrite=true, guessMethodArguments=false, favoriteStaticMembers=[org.junit.Assert.*, org.junit.Assume.*, org.junit.jupiter.api.Assertions.*, org.junit.jupiter.api.Assumptions.*, org.junit.jupiter.api.DynamicContainer.*, org.junit.jupiter.api.DynamicTest.*, org.mockito.Mockito.*, org.mockito.ArgumentMatchers.*, org.mockito.Answers.*], importOrder=[java, javax, com, org]}, progressReports={enabled=true}, foldingRange={enabled=true}, maven={downloadSources=false}, codeGeneration={hashCodeEquals={useJava7Objects=false, useInstanceof=false}, useBlocks=false, generateComments=false, toString={template=${object.className} [${member.name()}=${member.value}, ${otherMembers}], codeStyle=STRING_CONCATENATION, skipNullValues=false, listArrayContents=true, limitElements=0.0}}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-31 21:54:05.608
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-31 21:54:05.714
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-31 21:54:05.717
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-31 21:54:05.719
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-31 21:54:05.721
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-31 21:54:05.782
+!MESSAGE Reconciled 0. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-31 21:54:05.958
+!MESSAGE begin problem for /GUI.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-31 21:54:05.959
+!MESSAGE 1 problems reported for /GUI.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-31 21:54:05.961
+!MESSAGE Validated 1. Took 168 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-31 21:54:06.007
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-31 21:55:53.205
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-07-31 21:55:53.208
+!MESSAGE Clearing problems for /GUI.java
